@@ -1,0 +1,88 @@
+/* style.css */
+
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file name */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Inputs, Textareas, Selects */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-group input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0288d1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #026f9e;
+}
+
+/* Message Display */
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
