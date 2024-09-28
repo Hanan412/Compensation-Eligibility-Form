@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compensation Eligibility Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Compensation Eligibility Form</h1>
+    <form id="compensationForm">
+      <!-- Case Number -->
+      <div class="form-group">
+        <label for="caseNumber">Please provide the case number:</label>
+        <input
+          type="text"
+          id="caseNumber"
+          name="caseNumber"
+          required
+          pattern="\d+"
+          title="Please enter numbers only."
+        />
+      </div>
+
+      <!-- Customer Category -->
+      <div class="form-group">
+        <label for="customerCategory">Customer Category:</label>
+        <select id="customerCategory" name="customerCategory" required>
+          <option value="">Select Category</option>
+          <option value="new">New Customer</option>
+          <option value="existing">Existing Customer</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+
+      <!-- Reason for Complaint -->
+      <div class="form-group">
+        <label for="complaintReason">Reason for Complaint:</label>
+        <textarea id="complaintReason" name="complaintReason" required></textarea>
+      </div>
+
+      <!-- Question 1 -->
+      <div class="form-group">
+        <label>
+          1. Is the customer complaining about an issue related to a free subscription activation or using illegal methods to subscribe?
+        </label>
+        <input type="radio" id="q1Yes" name="q1" value="yes" required />
+        <label for="q1Yes">Yes</label>
+        <input type="radio" id="q1No" name="q1" value="no" />
+        <label for="q1No">No</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="form-group">
+        <label>
+          2. Has the issue been escalated to the appropriate team (e.g., Tech Team) and is the issue unresolved?
+        </label>
+        <input type="radio" id="q2Yes" name="q2" value="yes" required />
+        <label for="q2Yes">Yes</label>
+        <input type="radio" id="q2No" name="q2" value="no" />
+        <label for="q2No">No</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="form-group">
+        <label>
+          3. Has the issue persisted for more than 72 hours without resolution?
+        </label>
+        <input type="radio" id="q3Yes" name="q3" value="yes" required />
+        <label for="q3Yes">Yes</label>
+        <input type="radio" id="q3No" name="q3" value="no" />
+        <label for="q3No">No</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="form-group">
+        <label>
+          4. Was the delay in resolving the issue caused by internal back-and-forth or prolonged technical investigation (no ETA)?
+        </label>
+        <input type="radio" id="q4Yes" name="q4" value="yes" required />
+        <label for="q4Yes">Yes</label>
+        <input type="radio" id="q4No" name="q4" value="no" />
+        <label for="q4No">No</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="form-group">
+        <label>
+          5. Has the customer experienced multiple escalations or repeated failed troubleshooting attempts?
+        </label>
+        <input type="radio" id="q5Yes" name="q5" value="yes" required />
+        <label for="q5Yes">Yes</label>
+        <input type="radio" id="q5No" name="q5" value="no" />
+        <label for="q5No">No</label>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="form-group">
+        <label>
+          6. If the issue is technical, has the customer proven that there was no issue from their side?
+        </label>
+        <input type="radio" id="q6Yes" name="q6" value="yes" required />
+        <label for="q6Yes">Yes</label>
+        <input type="radio" id="q6No" name="q6" value="no" />
+        <label for="q6No">No</label>
+        <input type="radio" id="q6NA" name="q6" value="na" />
+        <label for="q6NA">Not Applicable</label>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="form-group">
+        <label>
+          7. Is the customer frustrated by poor service or have they expressed dissatisfaction with prolonged resolution times?
+        </label>
+        <input type="radio" id="q7Yes" name="q7" value="yes" required />
+        <label for="q7Yes">Yes</label>
+        <input type="radio" id="q7No" name="q7" value="no" />
+        <label for="q7No">No</label>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="form-group">
+        <label>
+          8. Has the customer received compensation in the last six months?
+        </label>
+        <input type="radio" id="q8Yes" name="q8" value="yes" required />
+        <label for="q8Yes">Yes</label>
+        <input type="radio" id="q8No" name="q8" value="no" />
+        <label for="q8No">No</label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
